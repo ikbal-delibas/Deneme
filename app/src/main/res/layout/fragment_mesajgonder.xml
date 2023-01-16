@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Mesajgonder.MesajgonderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="642dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mesajgonder_gruplar"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/mesajgonder_seciliGrup"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="Seçili Grup"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mesajgonder_mesajlar"
+                android:layout_width="match_parent"
+                android:layout_height="127dp" />
+
+            <TextView
+                android:id="@+id/mesajgonder_secilenmesaj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seçili Mesaj"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mesajgonder_mesajbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mesaj Gönder" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="201913709035-İkbal DELİBAŞ"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</FrameLayout>

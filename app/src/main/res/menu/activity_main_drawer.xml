@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mesajGonder"
+            android:icon="@drawable/mesajgonder"
+            android:title="@string/mesajgonder" />
+        <item
+            android:id="@+id/nav_mesajOlustur"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/mesajolustur" />
+        <item
+            android:id="@+id/nav_grupolustur"
+            android:icon="@drawable/grupolustur"
+            android:title="@string/grupolustur" />
+        <item
+            android:id="@+id/nav_uyeEkle"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/uyeekle" />
+        <item
+            android:id="@+id/nav_cikis"
+            android:icon="@drawable/cikis"
+            android:title="@string/cikis" />
+    </group>
+</menu>

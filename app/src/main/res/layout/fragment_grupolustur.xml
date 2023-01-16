@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.grupOlustur.GrupolusturFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="694dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="393dp"
+                android:layout_height="wrap_content"
+                android:text="Grup Adı"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grupOlustur_grupAdi"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Yazınız..."
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:text="Grup Simgesi"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/grupOlustur_grupResmi"
+                android:layout_width="117dp"
+                android:layout_height="93dp"
+                android:src="@drawable/grupolustur" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:text="Açıklama"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grupOlustur_grupAciklama"
+                android:layout_width="394dp"
+                android:layout_height="112dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/grupOlusturButton"
+                android:layout_width="394dp"
+                android:layout_height="55dp"
+                android:text="Grup Oluştur"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="396dp"
+                android:layout_height="30dp"
+                android:text="Gruplar"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grupOlustur_Gruplar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="201913709035-İkbal DELİBAŞ"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+</FrameLayout>
